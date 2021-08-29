@@ -18,6 +18,7 @@ function loadHTML(fName) {
         if (!(this instanceof BrowserWindow)) {
             throw new Error("utils#loadHTML 'this' should be instance of browser window");
         }
+        //directory changes when the application packaged
         var dir = DEV_MODE ? process.cwd():path.resolve(__dirname, "../../");
         var location = path.resolve(`${dir}`, "html", fName);
         var fileExists = fs.existsSync(location);
