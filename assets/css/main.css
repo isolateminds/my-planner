@@ -1,0 +1,14 @@
+.react-calendar {
+    width: 100% !important;
+}
+
+.main-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.pdf-alert {
+    position: fixed !important;
+    width: 100%;
+    text-align: center;
+}
