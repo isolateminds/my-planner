@@ -14,29 +14,4 @@ module.exports = {
             devTools: true
         }
     },
-    progress: {
-        transpaent: true,
-        title: "progress",
-        width: 220,
-        height: 165,
-        frame: false,
-        resizable: false,
-        center: true,
-        alwaysOnTop: true,
-    },
-    settings: {
-        width: 300,
-        height: 600,
-        resizable: false,
-        center: true,
-        movable: false,
-        title: "Settings",
-        modal: true,
-        webPreferences: {
-            preload: preloadPath,
-            nodeIntegration: true,
-            devTools: true
-        }
-    },
-
 }

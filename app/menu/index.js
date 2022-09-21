@@ -1,27 +1,16 @@
 //configuration of top windows Menu
-const { Menu, ipcMain } = require("electron");
+const { Menu } = require("electron");
 
 const template = [
     {
         label: "File",
         submenu: [
             {
-                label: "quit",
+                label: "Quit",
                 click: () => process.exit(0)
             }
         ]
     },
-    {
-        label: "Settings",
-        submenu: [
-            {
-                label: "configure",
-                click: () => {
-                    return ipcMain.emit("settings");
-                }
-            }
-        ]
-    }
 ];
 
 const menu = Menu.buildFromTemplate(template)
